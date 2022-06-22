@@ -33,7 +33,6 @@ var adicionarSorteado = function () {
 };
 
 var botao = document.getElementById("verificar");
-botao.onclick = adicionarSorteado;
 
 var caixaDoNumero = document.getElementById("numero");
 
@@ -41,7 +40,7 @@ var caixaDoNumero = document.getElementById("numero");
 segredos = [];
 
 for (var i = 0; i < 6; i += 1) {
-    segredos.push(Math.round(Math.random() * 10));
+    segredos.push(Math.round(Math.random() * 60));
 }
 
 var botaoClicado = function () {
@@ -62,7 +61,7 @@ var botaoClicado = function () {
 
 chute = [];
 for (var i = 0; i < 6; i++) {
-    chute.push(parseInt(prompt('digite um numero de 1 a 10')))
+    chute.push(parseInt(prompt('digite um numero de 1 a 60')))
 }
 
 var acertos = 0;
